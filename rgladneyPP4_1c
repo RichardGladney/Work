@@ -1,0 +1,26 @@
+class square {
+}
+
+size(200, 200);
+background(0);
+
+int x = 0; 
+while (x < width) {
+  line(x, 0, x, height);
+  x = x +20;
+}
+
+for (int y = 0; y < height; y = y +20) {
+  line(0, y, width, y);
+}
+
+rect(0, 0, 19, 19);
+rect(40, 0, 19, 19);
+rect(80, 0, 19, 19);
+rect(120, 0, 19, 19);
+rect(160, 0, 19, 19);
+rect(20, 20, 19, 19);
+rect(60, 20, 19, 19);
+rect(100, 20, 19, 19);
+rect(140, 20, 19, 19);
+rect(180, 20, 19, 19);
