@@ -1,9 +1,10 @@
 PVector location;
 PVector velocity;
+
 void setup() {
   size(640,360);
-  location = new PVector(50,50);
-  velocity = new PVector(2.5,5);
+  location = new PVector(0,100);
+  velocity = new PVector(2.5,5); 
 }
  
 void draw() {
@@ -19,32 +20,20 @@ void draw() {
  
   stroke(0);
   fill(175);
-  ellipse(location.x,location.y,16,16);
-  
-}
-
-
-PVector1 location;
-PVector2 velocity;
-void setup() {
-  size(655,320);
-  location = new PVector(100,100);
-  velocity = new PVector(5.5,5);
-}
+  ellipse(location.x,location.y,15,15); 
  
-void draw() {
-  background(255);
- 
-  location.add(velocity);
-   if ((location.x > width) || (location.x > 0)) {
-    velocity.x = velocity.x * -1;
+float x = 100;
+float y = 100;
+float xspeed = 10;
+float yspeed = 3.3;
+  if ((location.x < width) || (location.x > 0)) {
+    velocity.x = velocity.x * 1;
   }
-  if ((location.y > height) || (location.y > 0)) {
-    velocity.y = velocity.y * -1;
-  }
- 
+  if ((location.y < height) || (location.y > 0)) {
+    velocity.y = velocity.y * 1;
+
+}
   stroke(0);
-  fill(185);
-  ellipse(location.x,location.y,16,16);
-  
+  fill(174);
+  ellipse(location.x,150,14,14);
 }
